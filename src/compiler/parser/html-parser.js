@@ -60,7 +60,7 @@ export function parseHTML (html, options) {
   let last, lastTag
   while (html) {
     last = html
-    // Make sure we're not in a plaintext content element like script/style
+    // Make sure we're not in a plain text content element like script/style
     if (!lastTag || !isPlainTextElement(lastTag)) {
       let textEnd = html.indexOf('<')
       if (textEnd === 0) {
